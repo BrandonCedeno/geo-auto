@@ -1,0 +1,145 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em !important;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: BOLD;
+  }
+
+  .navbar {
+    backdrop-filter: blur(5px); /* Add blur effect to navbar */
+  }
+  
+  .sidebar {
+    backdrop-filter: blur(5px); /* Add blur effect to sidebar */
+  }
+  
+  .navbar-brand, /* Exclude logo from blur effect */
+  .nav-button-custom, /* Exclude button from blur effect */
+  .sidebar-link { /* Exclude links in sidebar from blur effect */
+    backdrop-filter: none; /* Remove blur effect */
+  }
+  
+
+  .navbar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center !important; /* Change this */
+    z-index: 2;
+    align-items: center !important;
+    color: white;
+    backdrop-filter: blur(5px) !important;
+  }
+  
+  .nav-button-custom{
+    font-size: 1em !important;
+    font-family: "Josefin Sans", sans-serif !important;
+    font-stretch: expanded !important;
+    font-weight: 550 !important;
+    font-style: BOLD !important;
+    margin-left: 1em;
+  }
+  
+  .nav-button-custom, .nav-button-custom:focus, .nav-button-custom:active {
+    position: sticky;
+    z-index: 3;
+    color: white !important;
+    border: transparent !important;
+    background-color: transparent !important;
+  }
+  
+  .nav-button-custom:hover {
+    color: rgba(255, 255, 255, 0.75) !important; 
+  }
+  
+  .sidebar.open {
+    width: 15% !important;
+    align-items: center !important;
+    opacity: 1;
+  }
+  
+  .sidebar-link {
+    color: white !important;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .logo:hover #gear,
+  .logo.scrolling #gear {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .logo{
+    width: 15em;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .navbar-brand {
+    position: fixed;
+    margin-top: 1.5em;
+    z-index: 3;
+  }
+
+  /* Mobile*/
+
+  @media screen and (max-width: 932px)
+  {
+    .flex-column {
+    margin-top: 8em;
+    justify-content: center;
+  }
+
+  .nav-button-custom {
+    font-size: 1.6em !important;
+  }
+
+  .sidebar {
+    background-color: rgba(0, 0, 0, .95);
+    font-size: 1.5em !important;
+  }
+
+  .sidebar.open {
+    width: 100% !important;
+    height: 100%;
+    justify-content: center !important;
+    padding-bottom: 3em;
+    z-index: 1;
+  }
+
+  .logo {
+    width: 8em !important;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    justify-content: center !important;
+  }
+  }

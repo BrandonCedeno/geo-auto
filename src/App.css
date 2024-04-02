@@ -1,0 +1,71 @@
+.main-page{
+  display: flex;
+  flex-direction: column;
+  content: columnm;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.title-container{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-image: url('/assets/mechanic.jpg');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left:0;
+}
+
+.title{
+  position: relative;
+  font-size: 6em;
+  text-shadow: 8px 10px 24px rgba(0, 0, 0, .95);
+}
+
+.slogan{
+  background-color: rgba(138, 0, 0, 0.585);
+  width: fit-content;
+  padding: .5em 2em;
+}
+
+
+@media screen and (max-width: 932px) {
+  
+.main-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+  .title{
+    position: relative;
+    width: fit-content;
+    font-size: 3em;
+    margin-left: .5em;
+  }
+
+  .slogan{
+    margin-left: 0;
+  }
+
+
+  .question{
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, .95);
+    font-size: 30px;
+    z-index: 0;
+  }
+  
+}
+
