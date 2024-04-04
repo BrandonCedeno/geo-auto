@@ -1,5 +1,4 @@
 import React from 'react';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import './location.css'
 import { useAnimation } from './useAnimation';
 
