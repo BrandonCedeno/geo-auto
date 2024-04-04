@@ -15,15 +15,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5em;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 60em;
     background-image: url('/assets/mech.jpeg');
     background-size: cover;
-    margin-top: 50em;
-    opacity: .2;
+    margin-top: 75em;
+    opacity: 0;
     transition: opacity 0.5s ease; 
+    border: transparent;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
   }
+
+
+.info-container::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    background: transparent;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+}
 
   .info-container.visible {
     opacity: 1;
@@ -40,8 +51,8 @@
   .info-card {
     padding: 2em;
     margin: 3em;
-    width: 36em;
-    height: 15em;
+    width: 40em;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.941);
     box-shadow: inset 0 0 12px rgba(0, 0, 0, .95);
     border-radius: 10px;
@@ -80,6 +91,103 @@
     scale: .8;
   }
 
+  .about{
+    position: relative;
+    height: 200em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    box-shadow: 6px 12px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden ;
+    padding: 2em 0;
+    z-index: 1;
+  }
+
+  .about-content{
+    background-color: rgb(109, 12, 12);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    padding: 2em;
+    color: #ffffff;
+    margin-right: 2em;
+    font-size: 2em;
+    text-wrap: wrap;
+    align-content: center ;
+    height: fit-content;
+    z-index: 1;
+  }
+
+  .about-content h2{
+    font-size: 1.5em;
+    text-shadow: 6px 12px 16px rgba(0, 0, 0, .5);
+  }
+
+  .about-img{
+    position: absolute;
+    right:0;
+    width: 55%;
+    height: fit-content;
+    overflow: hidden;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .style-banner{
+    position: absolute;
+    top: 0;
+    background-color: rgb(38, 37, 37);
+    height: 1em;
+    width: 100%;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .style-banner1{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(38, 37, 37);
+    height: 1em;
+    width: 100%;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes translateRight {
+    0% {transform: translateX(-100px);}
+    100% {transform: translateX(0px);}
+  }
+
+  @keyframes translateLeft {
+    0% {transform: translateX(100px);}
+    100% {transform: translateX(0px);}
+  }
+
+  @keyframes translateDown {
+    0% {transform: translateY(-100px);}
+    100% {transform: translateY(0px);}
+  }
+
+  @keyframes translateUp {
+    0% {transform: translateY(100px);}
+    100% {transform: translateY(0px);}
+  }
+
+  .about-content.animate{
+    animation: translateRight 2s;
+  }
+
+  .about-img.animate{
+    animation: translateLeft 2s;
+  }
+
+
   @media screen and (max-width: 932px)
   {
     .question{
@@ -106,7 +214,8 @@
         width: 100%;
         height: auto;
         background-image: url('/assets/mech.jpeg');
-        margin-top: 50em;
+        margin-top: 55em;
+        padding: 2em;
       }
       
       /* Info card container */
@@ -146,5 +255,41 @@
       .prev-card, .next-card {
         display: none;
       }
+
+      .about{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        background-color: transparent;
+      }
+    
+      .about-content{
+        border-radius: 0;
+        padding: 2em;
+        color: #ffffff;
+        margin-right: 0;
+        font-size: 1.2em;
+        text-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        box-shadow: inset 0 0 8px 6px rgba(0 , 0, 0, .5);
+      }
+    
+      .about-content h2{
+        font-size: 1.5em;
+        text-shadow: 6px 12px 16px rgba(0, 0, 0, .5);
+      }
+    
+      .about-img{
+        position: relative;
+        width: 100%;
+        height:auto;
+        overflow: hidden;
+        border-radius: 0;
+        box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5);
+      }
   }
+  
   

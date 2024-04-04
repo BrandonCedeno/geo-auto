@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import InfoCard from './InfoCard';
 import './InfoSection.css';
+import { useAnimation } from './useAnimation';
 
 const InfoSection = () => {
+  const animateRef = useAnimation();
   const infoCards = [
     {
       title: 'Certified Excellence',
@@ -60,8 +62,9 @@ const InfoSection = () => {
   };
 
   return (
+    <>
     <div className={`info-container ${isVisible ? 'visible' : ''}`}>
-      <h2 className='question'>Why Choose Davie Battery?</h2>
+      <h2 className='question'>Why Choose Geo's?</h2>
       <div className='info-cards'>
         {windowWidth > 932 && <InfoCard className='prev-card' title={prevCard.title} content={prevCard.content} />}
         <InfoCard className='current-card' title={currentCard.title} content={currentCard.content} />
@@ -73,6 +76,24 @@ const InfoSection = () => {
         <button className='info-buttons' onClick={handleNext}>Next</button>
       </div>
     </div>
+
+    <div className='about' id='about'>
+      <div className='style-banner'>
+      </div>
+      <div ref={animateRef} className='about-content'>
+        <h2>About Us</h2>
+        <p>A family owned business setting a standard for excellent service
+           and committed to every customer. We sell batteries, remanufacture
+           and rebuild alternators and starters, and provide automotive repair 
+           services. Our goal is to deliver our promise in revolutionizing the
+           automotive industry. </p>
+      </div>
+        <img src = 'assets/mech2.jpg' className='about-img' ref={animateRef}/>
+        <div className='style-banner1'>
+      </div>
+
+      </div>
+    </>
   );
 };
 

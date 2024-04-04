@@ -9,10 +9,15 @@ const NavigationBar = () => {
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
+  const handleHomeClick = () => {
+    window.scrollTo(0, 0);
+    toggleSidebar();
+  };
+
   return (
     <> 
       <Navbar className="navbar" expand="lg" fixed="top">
-        <Button variant="dark" onClick={toggleSidebar} className='nav-button-custom'>
+        <Button variant="dark" onClick={toggleSidebar} className='nav-button-custom' id='custom'>
           {isOpen ? 'X' : '☰'}
         </Button>
         <Navbar.Brand className="navbar-brand">
@@ -22,10 +27,10 @@ const NavigationBar = () => {
       </Navbar>
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <Nav className="flex-column">
-          <Nav.Link className="sidebar-link" href="#home">Home</Nav.Link>
-          <Nav.Link className="sidebar-link" href="#features">Features</Nav.Link>
-          <Nav.Link className="sidebar-link" href="#pricing">Pricing</Nav.Link>
-          <Nav.Link className="sidebar-link" href="#contact">Contact</Nav.Link>
+          <Nav.Link className="sidebar-link" onClick={handleHomeClick} href="#home">Home</Nav.Link>
+          <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#about">About Us</Nav.Link>
+          <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#location">Location</Nav.Link>
+          <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#contact">Contact</Nav.Link>
         </Nav>
       </div>
     </>
