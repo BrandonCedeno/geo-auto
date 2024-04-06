@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import InfoCard from './InfoCard';
-import './InfoSection.css';
+import './styles/InfoSection.css';
 import { useAnimation } from './useAnimation';
 
 const InfoSection = () => {
@@ -80,7 +80,7 @@ const InfoSection = () => {
     <div className='about' id='about'>
       <div className='style-banner'>
       </div>
-      <div ref={animateRef} className='about-content'>
+      <div className='about-content' ref={animateRef}>
         <h2>About Us</h2>
         <p>A family owned business setting a standard for excellent service
            and committed to every customer. We sell batteries, remanufacture

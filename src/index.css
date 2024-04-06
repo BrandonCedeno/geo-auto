@@ -1,6 +1,8 @@
 #root {
-  background-color: transparent;
+  background-image: url('/assets/mechanic.jpg');
+  background-size: repeat;
   width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -9,4 +11,14 @@
   font-weight: 700;
   font-style: BOLD;
   color: white;
+}
+
+.intro{
+  position: fixed;
+  z-index: 4;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }

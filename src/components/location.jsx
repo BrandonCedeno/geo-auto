@@ -1,5 +1,5 @@
 import React from 'react';
-import './location.css'
+import './styles/location.css'
 import { useAnimation } from './useAnimation';
 
 const Location = () => {

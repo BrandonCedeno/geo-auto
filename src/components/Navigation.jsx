@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Button, NavbarBrand } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { ReactComponent as CarLogoSvg } from './carLogoSVG';
-import './Navigation.css';
+import './styles/Navigation.css';
 
 
 const NavigationBar = () => {
