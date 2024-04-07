@@ -7,3 +7,24 @@
     from { opacity: 1; }
     to { opacity: 0; }
   }
+
+  ::-webkit-scrollbar{
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: rgba(37, 37, 37, 0.75);
+  }
+
+  ::-webkit-scrollbar-button{
+    background-color: rgb(52, 50, 50);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: rgba(112, 112, 112, 0.844);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-track-piece{
+    background-color: rgba(47, 47, 47, 0.75);
+  }

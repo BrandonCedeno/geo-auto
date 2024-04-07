@@ -195,7 +195,7 @@
   .contact.animate {
     animation: translateIn 1s;
   }
-  
+
   @media screen and (max-width: 932px) {
     
   .main-page{
