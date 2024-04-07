@@ -1,10 +1,6 @@
 #root {
-  background-image: url('/assets/mechanic.jpg');
-  background-size: repeat;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -13,12 +9,10 @@
   color: white;
 }
 
-.intro{
-  position: fixed;
-  z-index: 4;
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+@media screen and (max-width: 932px)
+{
+  #root {
+    width: 100%;
+    height: 100vh;
+  }
 }

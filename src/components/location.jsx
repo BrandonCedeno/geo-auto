@@ -11,8 +11,6 @@ const Location = () => {
         <div id= 'location' className='location'>
             <iframe
                 className='map-iframe'
-                width="100%"
-                height="400px"
                 style={{border:0}}
                 loading="lazy"
                 allowFullScreen
