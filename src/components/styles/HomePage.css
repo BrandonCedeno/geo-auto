@@ -53,6 +53,7 @@
   .contact-card{
     display: flex;
     flex-direction: column;
+    height: 100%;
     align-items: center;
     position: relative;
     padding: 1em 2em 2em;
@@ -66,16 +67,18 @@
     font-size: 10%;
   }
   .card{
+    position: relative;
     background-color: rgb(14, 63, 154);
+    width: 100%;
     height: 100%;
     width: fit-content;
     box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.5);
     align-content: center;
     justify-content: flex-start;
+    padding: 2em 2em 5em 2em;
     color: white;
     align-items: center !important;
     border-radius: 0;
-    padding: 4em 2em 0 2em;
     align-items: left;
     text-wrap: nowrap;
     text-indent: 0;

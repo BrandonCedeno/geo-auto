@@ -6,6 +6,7 @@
     height: 100%;
     overflow: hidden;
     transition: width 0.3s;
+    animation: in ease 1s;
     background-color: rgba(17, 17, 17, 0.849);
     z-index: 2;
     align-items: center !important;
@@ -34,7 +35,7 @@
     position: fixed;
     background-color: rgba(17, 17, 17, 0.849);
     display: flex;
-    width: 100% !;
+    width: 100%;
     justify-content: center !important; /* Change this */
     z-index: 3;
     align-items: center !important;
@@ -66,6 +67,7 @@
   .sidebar.open {
     width: 10em !important;
     align-items: center !important;
+    transition: width 0.3s ease-out;
     opacity: 1;
     z-index: 2;
   }
@@ -88,6 +90,16 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  @keyframes in{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+  @keyframes out{
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+  }
   
   .logo{
     width: 8em;
@@ -107,7 +119,6 @@
   @media screen and (max-width: 932px)
   {
     .flex-column {
-      margin-top: 15em;
     justify-content: center;
   }
 
@@ -126,6 +137,8 @@
     justify-content: center !important;
     align-content: center !important;
     z-index: 2;
+    padding: 2em;
+    padding-top: 10em;
   }
 
   .logo {
@@ -137,5 +150,16 @@
     position: fixed;
     width: 100%;
     justify-content: center !important;
+  }
+
+  .mobile-nav-button{
+    position: absolute;
+    top:0;
+    left:0;
+    margin-top: .5em;
+    margin-left: 1em;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
   }
   }

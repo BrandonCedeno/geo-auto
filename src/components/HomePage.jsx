@@ -31,7 +31,7 @@ function HomePage() {
         <br></br>
           <div className='card'>
             <h3>Email: jcedeno51@comcast.net</h3>
-            <h3>Phone: (954) 873 - 1553</h3>
+            <h3>Text: (954) 406 - 6245</h3>
               <br></br>
               <h3>Opening Hours:</h3>
               <h3>8:00 AM - 5:00 PM</h3>
