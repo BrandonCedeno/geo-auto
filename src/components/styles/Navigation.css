@@ -19,7 +19,6 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: BOLD;
-    box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.542);
   }
 
   .navbar {
@@ -45,16 +44,14 @@
     z-index: 3;
     align-items: center !important;
     color: white;
-    box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.542);
   }
   
-  .nav-button-custom #custom{
-    font-size: 1em !important;
+  .nav-button-custom{
+    font-size: 1.5em !important;
     font-family: "Josefin Sans", sans-serif !important;
     font-stretch: expanded !important;
     font-weight: 550 !important;
-    font-style: BOLD !important;
-    margin-left: 0;
+    margin-left: 1em;
     z-index: 3;
   }
   
@@ -79,7 +76,7 @@
   
   .sidebar-link {
     color: white !important;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .sidebar-link:hover {

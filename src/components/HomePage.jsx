@@ -13,7 +13,9 @@ function HomePage() {
 
   return (
     <div className='main-page'>
+      
        <NavigationBar />
+
       <div className='title-container' id='home'>
         <h1 className='title'>GEO'S AUTOMOTIVE</h1>
         <h2 className='slogan'>We Care and We Deliver</h2>

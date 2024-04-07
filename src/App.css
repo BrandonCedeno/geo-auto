@@ -1,0 +1,9 @@
+.intro{
+    position: fixed;
+    z-index: 4;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
