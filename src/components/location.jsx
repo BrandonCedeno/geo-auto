@@ -18,7 +18,7 @@ const Location = () => {
             >
             </iframe>
             <div className='building'>
-                <img src='assets/building.jpg'/>
+                <img src='assets/building.jpg' alt='Davie Florida Autotmotive Service Building'/>
             </div> 
         </div>
         <div ref={animateRef} className='loc-title'>

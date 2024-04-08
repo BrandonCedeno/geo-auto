@@ -35,7 +35,7 @@ const InfoSection = () => {
   return (
     <>
   <div className='info-container' ref={animateRef}>
-    <img src='assets/mech.jpeg'/>
+    <img src='assets/mech.jpeg' alt='Geo Automotive Mechanic'/>
     <div className='question'>
       Why Choose Geo's?
     </div>
@@ -60,11 +60,11 @@ const InfoSection = () => {
 
         <div className='about-content'>
           <h2>About Us</h2>
-          <p>A family owned business setting a standard for excellent service
-            and committed to every customer. We sell batteries, remanufacture
-            and rebuild alternators and starters, and provide automotive repair 
+          <p> A family owned business setting a standard for excellent service, 
+            committed in putting all of your concerns to rest. We sell batteries and remanufacture 
+            alternators and starters. We also pride ourselves in our automotive repair 
             services. Our goal is to deliver our promise in revolutionizing the
-            automotive industry. </p>
+            automotive industry! </p>
         </div>
 
         <img src='assets/mech2.jpg' className='about-img' ref={animateRef} />
