@@ -7,19 +7,42 @@ import Location from './location';
 import { ReactComponent as LogoAnimate } from './logoAnimate';
 import { useAnimation } from './useAnimation';
 
+const BackgroundVideo = () => {
+  return (
+      <div style={{ 
+          position: 'fixed', 
+          top: 0, 
+          left: 0, 
+          width: '100%', 
+          alignItems: 'center',
+          height: '100%', 
+          overflow: 'hidden',
+          zIndex: -1
+      }}>
+          <video style={{ 
+              position: 'absolute',
+              scale:'1',
+              width: 'auto',
+              height: 'auto',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)'
+          }} autoPlay loop muted>
+              <source src="assets/Render.mp4" type="video/mp4" />
+          </video>
+      </div>
+  );
+};
 function HomePage() {
 
   const animateRef= useAnimation();
 
   return (
     <div className='main-page'>
+
+      <BackgroundVideo />
       
        <NavigationBar />
-
-      <div className='title-container' id='home'>
-        <h1 className='title'>GEO'S AUTOMOTIVE</h1>
-        <h2 className='slogan'>We Care and We Deliver</h2>
-      </div>
 
       <InfoSection />
 

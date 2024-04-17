@@ -28,7 +28,7 @@ const InfoSection = () => {
     },
     {
       title: 'Transparent Pricing',
-      content: 'No surprises here! We provide honest estimates and explain every repair before starting work. Our goal is to ensure transparency in pricing and give you peace of mind. Trust Davie Battery for straightforward and fair pricing.',
+      content: "No surprises here! We provide honest estimates and explain every repair before starting work. Our goal is to ensure transparency in pricing and give you peace of mind. Trust Geo's for straightforward and fair pricing.",
     }
   ];
   
