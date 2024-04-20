@@ -10,39 +10,58 @@
     padding: 0;
     margin: 0;
   }
-  
-  .title-container{
+
+  .bg{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
     top:0;
-    left:0;
+    left: 0;
+    background-image: url('assets/concrete-2.jpg');
+    background-size: cover;
+    width: 100%;
+    height:100%;
   }
   
-  .title{
-    position: relative;
-    font-size: 6em;
-    text-shadow: 8px 10px 24px rgba(0, 0, 0, .95);
+  .title {
+    color: #ffffff;
+    margin-left: 0 !important;
+    margin-top: 15%;
+    font-weight: 100;
+    stroke-width: 100px;
+    text-shadow:
+      0 0 .4em #ff009d, 
+      0 0 .6em #ff0000,
+      0 0 .8em #ff0000, 
+      0 0 1em rgb(255, 0, 0);
+    font-size: 7em;
+    animation: flickerAnimation 2s linear infinite, flickerDelay 8s steps(1) infinite;
   }
   
   .slogan{
-    background-color: rgba(138, 0, 0, 0.585);
-    margin-top: 3em;
-    width: fit-content;
-    padding: .5em 2em;
+    margin-top: 1.5em;
+    font-size:.5em;
+    text-shadow:
+    0 0 .2em #ffffff, 
+    0 0 .3em #8400ff,
+    0 0 .4em #00ffe5, 
+    0 0 1.2em rgb(0, 255, 247), 
+    0 0 1.5em rgb(0, 251, 255); 
+  }
+
+  @keyframes flickerAnimation {
+    0%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.5; }
+  }
+
+  @keyframes flickerDelay {
+    0%, 100% { opacity: 1; }
   }
   
+
   .contact{
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 30em;
+    height: 40em;
     width: 100%;
     background-color: rgb(42, 118, 172);
     z-index: 1;
@@ -56,16 +75,16 @@
     height: 100%;
     align-items: center;
     position: relative;
-    padding: 1em 2em 2em;
+    padding: 1.5em 1.5em 1.5em;
     font-size: 2em;
     overflow: hidden;
-    padding-bottom: 1.6em;
   }
-  
-  .contact h2{
-    margin-bottom: 1em;
-    font-size: 10%;
+
+  .contact-title{
+    font-size: 1.4em;
+    letter-spacing: .1em;
   }
+
   .card{
     position: relative;
     background-color: rgb(14, 63, 154);
@@ -180,6 +199,14 @@
    font-size: 80%;
    margin-top: 3em;
   }
+
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2em;
+  }
   
   @keyframes fadeIn {
     0% {opacity: 0;}
@@ -199,6 +226,11 @@
     animation: translateIn 1s;
   }
 
+  .opening{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    letter-spacing: .1em;
+  }
   @media screen and (max-width: 932px) {
     
   .main-page{
@@ -209,17 +241,10 @@
     align-items: center;
   }
   
-    .title{
-      position: relative;
-      width: fit-content;
-      font-size: 3em;
-      margin-left: .5em;
-    }
-  
-    .slogan{
-      margin-left: 0;
-    }
-  
+  .title{
+    margin-top: 30%;
+    font-size: 5em;
+  }
   
     .question{
       text-shadow: 2px 4px 12px rgba(0, 0, 0, .95);

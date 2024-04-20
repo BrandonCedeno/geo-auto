@@ -3,7 +3,7 @@ import './styles/location.css'
 import { useAnimation } from './useAnimation';
 
 const Location = () => {
-    const address = '5150 SW 48th Way, Davie, FL'
+    const address = '7548 W McNab Rd, North Lauderdale, FL'
     const animateRef = useAnimation();
 
   return (
@@ -22,8 +22,8 @@ const Location = () => {
             </div> 
         </div>
         <div ref={animateRef} className='loc-title'>
-          5150 SW 48th Way, Davie, FL 33314<br></br>
-          Suite #610
+          7548 W McNab Rd, North Lauderdale, FL 33068<br></br>
+          Suite #05-07
         </div>
     </div>
   );

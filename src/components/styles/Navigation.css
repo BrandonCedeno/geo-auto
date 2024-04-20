@@ -4,6 +4,7 @@
     left: 0;
     width: 0;
     height: 100%;
+    text-wrap: nowrap;
     overflow: hidden;
     transition: width 0.3s;
     animation: in ease 1s;
@@ -36,7 +37,7 @@
     background-color: rgba(17, 17, 17, 0.849);
     display: flex;
     width: 100%;
-    justify-content: center !important; /* Change this */
+    justify-content: center !important;
     z-index: 3;
     align-items: center !important;
     color: white;
@@ -139,6 +140,7 @@
     z-index: 2;
     padding: 2em;
     padding-top: 10em;
+    backdrop-filter: blur(8px); 
   }
 
   .logo {

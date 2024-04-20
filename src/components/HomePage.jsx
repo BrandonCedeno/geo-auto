@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/HomePage.css';
 import NavigationBar from './Navigation';
@@ -7,40 +7,24 @@ import Location from './location';
 import { ReactComponent as LogoAnimate } from './logoAnimate';
 import { useAnimation } from './useAnimation';
 
-const BackgroundVideo = () => {
-  return (
-      <div style={{ 
-          position: 'fixed', 
-          top: 0, 
-          left: 0, 
-          width: '100%', 
-          alignItems: 'center',
-          height: '100%', 
-          overflow: 'hidden',
-          zIndex: -1
-      }}>
-          <video style={{ 
-              position: 'absolute',
-              scale:'1',
-              width: 'auto',
-              height: 'auto',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)'
-          }} autoPlay loop muted>
-              <source src="assets/Render.mp4" type="video/mp4" />
-          </video>
-      </div>
-  );
-};
 function HomePage() {
 
   const animateRef= useAnimation();
-
   return (
     <div className='main-page'>
-
-      <BackgroundVideo />
+      <div className='bg'>
+      <div 
+          className='title'
+      >
+        Geo's
+        <br></br>
+        Automotive
+        <br></br>
+        <div className='slogan'>
+        We Don't Just Fix, We Build
+        </div>
+      </div>
+      </div>
       
        <NavigationBar />
 
@@ -50,13 +34,15 @@ function HomePage() {
 
       <div id='contact' ref={animateRef}  className='contact'>
         <div className='contact-card' >
-        Contact Us
+        <div className='contact-title'>Contact Us</div>
         <br></br>
           <div className='card'>
-            <h3>Email: jcedeno51@comcast.net</h3>
+            <div className='contact-info'>
+            <h3>Email: contact@geosautomotive.com</h3>
             <h3>Text: (954) 406 - 6245</h3>
+            </div>
               <br></br>
-              <h3>Opening Hours:</h3>
+              <div className='opening'>Opening Hours:</div>
               <h3>8:00 AM - 5:00 PM</h3>
               <h3>MON - FRI</h3>
           </div>
