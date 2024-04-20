@@ -13,9 +13,10 @@ function HomePage() {
   return (
     <div className='main-page'>
       <div className='bg'>
-      <div 
-          className='title'
-      >
+        <img src='assets/concrete.jpg' />
+      </div>
+
+      <div className='title'>
         Geo's
         <br></br>
         Automotive
@@ -23,7 +24,6 @@ function HomePage() {
         <div className='slogan'>
         We Don't Just Fix, We Build
         </div>
-      </div>
       </div>
       
        <NavigationBar />
