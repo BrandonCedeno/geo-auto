@@ -15,6 +15,10 @@ const NavigationBar = () => {
     toggleSidebar();
   };
 
+  const logoClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 932); 
@@ -40,7 +44,7 @@ const NavigationBar = () => {
             {isOpen ? 'X' : '☰'}
           </Button>
           <Navbar.Brand className="navbar-brand">
-            <CarLogoSvg />
+            <CarLogoSvg  onClick={logoClick}/>
           </Navbar.Brand>
           <div style={{ flexGrow: 1 }}></div>
         </Navbar>

@@ -134,8 +134,8 @@
   .about-img{
     position: absolute;
     right: 0;
-    width: 55%;
-    height: fit-content;
+    width: 50%;
+    height: auto;
     overflow: hidden;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
     z-index: 0;
@@ -197,7 +197,12 @@
         font-size: 2em;
         text-wrap: wrap;
         margin: 0;
+    }
 
+    .info-container img{
+      width: 100%;
+      height: auto;
+      scale: 5;
     }
     .info-card h3{
         font-size: 1.5em;
