@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 40em;
+    height: 45em;
     width: 100%;
     background-color: rgb(42, 118, 172);
     z-index: 1;
@@ -75,9 +75,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    align-items: center;
+    align-items: center !important;
     position: relative;
-    padding: 1.5em 1.5em 1.5em;
     font-size: 2em;
     overflow: hidden;
   }
@@ -94,9 +93,9 @@
     height: 100%;
     width: fit-content;
     box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.5);
-    align-content: center;
-    justify-content: flex-start;
-    padding: 2em 2em 5em 2em;
+    align-items: center;
+    justify-content: flex-start;  
+    padding: 1.5em 4em;
     color: white;
     align-items: center !important;
     border-radius: 0;
@@ -106,16 +105,6 @@
     z-index: 0;
   }
   
-  .hours{
-    position: absolute;
-    bottom: 3em;
-    background-color: white;
-    color: black;
-    height: fit-content;
-    width: fit-content;
-    padding: 1em;
-    border-radius: 2px;
-  }
   
   .footer{
     color: white;
@@ -206,8 +195,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 2em;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: .8em;
+  }
+
+  .contact-info a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-info a:hover{
+    color: rgba(0, 0, 0, 0.515);
   }
   
   @keyframes fadeIn {
@@ -229,8 +228,7 @@
   }
 
   .opening{
-    font-size: 1.2em;
-    margin-bottom: 1em;
+    font-size: 1em;
     letter-spacing: .1em;
   }
   @media screen and (max-width: 932px) {

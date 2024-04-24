@@ -34,12 +34,18 @@ function HomePage() {
 
       <div id='contact' ref={animateRef}  className='contact'>
         <div className='contact-card' >
-        <div className='contact-title'>Contact Us</div>
-        <br></br>
           <div className='card'>
+            <div className='contact-title'>Contact Us</div>
+            <br></br>
             <div className='contact-info'>
-            <h3>Email: contact@geosautomotive.com</h3>
-            <h3>Text: (954) 406 - 6245</h3>
+            Call Us
+            <a href='tel:+19548731553'>(954) - 873 - 1553</a>
+            <br></br>
+            Email Us
+            <a href='mailto:contact@geosautomotive.com'>contact@geosautomotive.com</a>
+            <br></br>
+            Text Us
+            <a href='sms:+19544066245'>(954) 406 - 6245</a>
             </div>
               <br></br>
               <div className='opening'>Opening Hours:</div>
