@@ -39,7 +39,7 @@ function HomePage() {
             <br></br>
             <div className='contact-info'>
             Call Us
-            <a href='tel:+19548731553'>(954) - 873 - 1553</a>
+            <a href='tel:+19548761570'>(954) 876 - 1570</a>
             <br></br>
             Email Us
             <a href='mailto:contact@geosautomotive.com'>contact@geosautomotive.com</a>
