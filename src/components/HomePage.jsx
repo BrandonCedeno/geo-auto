@@ -45,7 +45,7 @@ function HomePage() {
             <a href='mailto:contact@geosautomotive.com'>contact@geosautomotive.com</a>
             <br></br>
             Text Us
-            <a href='sms:+19544066245'>(954) 406 - 6245</a>
+            <a href='sms:+18335238173'>(833) 523 - 8173</a>
             </div>
               <br></br>
               <div className='opening'>Opening Hours:</div>
