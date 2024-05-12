@@ -17,9 +17,9 @@ function HomePage() {
       </div>
 
       <div className='title'>
-        Geo's
+        <h1>Geo's
         <br></br>
-        Automotive
+        Automotive</h1>
         <br></br>
         <div className='slogan'>
         We Don't Just Fix, We Build

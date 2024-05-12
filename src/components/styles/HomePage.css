@@ -21,7 +21,7 @@
     z-index: -1;
   }
   
-  .title {
+  .title{
     position: fixed;
     top:0;
     color: #ffffff;
@@ -37,9 +37,23 @@
     font-size: 7em;
     z-index: 0;
   }
+
+  .title h1{
+    top:0;
+    color: #ffffff;
+    font-weight: 100;
+    stroke-width: 100px;
+    text-shadow:
+      0 0 .4em #ff009d, 
+      0 0 .6em #ff0000,
+      0 0 .8em #ff0000, 
+      0 0 1em rgb(255, 0, 0);
+    font-size: 1em;
+    z-index: 0;
+    margin-bottom: 0;
+  }
   
   .slogan{
-    margin-top: 1.5em;
     font-size:.5em;
     text-shadow:
     0 0 .2em #ffffff, 
