@@ -67,7 +67,7 @@ const InfoSection = () => {
             automotive industry! </p>
         </div>
 
-        <img src='assets/Geo Graphic Design.png' className='about-img' ref={animateRef} />
+        <img src='assets/Geo Graphic Design.webp' className='about-img' ref={animateRef} />
 
         <div className='style-banner1'>
         </div>

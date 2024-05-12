@@ -32,7 +32,7 @@ const Location = () => {
         </div>
         <div ref={animateRef} className='loc-title'>
           7548 W McNab Rd, North Lauderdale, FL 33068<br></br>
-          Suite #A05-07
+          Building A #05-07
         </div>
     </div>
   );

@@ -26,7 +26,7 @@
     top:0;
     color: #ffffff;
     margin-left: 0 !important;
-    margin-top: 1.5em;
+    margin-top: 25vh;
     font-weight: 100;
     stroke-width: 100px;
     text-shadow:
@@ -242,7 +242,7 @@
   }
   
   .title{
-    margin-top: 13%;
+    margin-top: 30vh;
     font-size: 4em;
   }
   
@@ -281,8 +281,8 @@
     }
     
     .title{
-      margin-top: 30%;
-      font-size: 5em;
+      margin-top: 30vh;
+      font-size: 4em;
     }
     
       .question{
