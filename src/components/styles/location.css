@@ -105,6 +105,7 @@
     .loc-container{
       height:fit-content;
       margin-bottom:-100px;
+      justify-items: center;
     }
 
     .loc-content{
@@ -127,16 +128,11 @@
 
   @media screen and (max-width: 440px)
   {
-    .location{
-      display: flex-box;
-      flex-direction: column;
-      height: 55em; 
-      margin: 0;    
-    }
-
+ 
     .loc-container{
       height:fit-content;
       margin-bottom:-50px;
+      justify-items: center;
     }
     
     .loc-body{
