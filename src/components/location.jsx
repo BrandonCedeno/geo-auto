@@ -3,37 +3,27 @@ import './styles/location.css'
 import { useAnimation } from './useAnimation';
 
 const Location = () => {
-    const address = '7548 W McNab Rd, North Lauderdale, FL'
-    const animateRef = useAnimation();
-
+  const titleRef = useAnimation();
+  const bodyRef = useAnimation();
+  const imgRef = useAnimation();
   return (
-    <div className='loc-container'>
-        <div id= 'location' className='location'>
-            <iframe
-                className='map-iframe'
-                style={{border:0}}
-                allow='accelerometer'
-                loading="lazy"
-                allowFullScreen
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyAl40eKrXbW3dlQ5QQc0VKTIe_1_5z_CNI&q=${encodeURIComponent(address)}`}
-            >
-            </iframe>
-            <div className='building'>
-            <iframe
-                className='building-street'
-                style={{border:0}}
-                allow='accelerometer'
-                loading="lazy"
-                allowFullScreen
-                src="https://www.google.com/maps/embed?pb=!4v1713741501744!6m8!1m7!1s6u91YiBhiI35OtrkQXPQqQ!2m2!1d26.20709051663714!2d-80.22670713868786!3f177.18969313032937!4f-0.44573997061368686!5f0.7820865974627469"
-            >
-            </iframe>
+    <div className='loc-container' id = 'location'>
+
+        <div ref={titleRef} className='loc-title'>
+          We offer mobile service, we come to you!
+        </div>
+
+          <div className='loc-content'>
+            <div ref={bodyRef} className='loc-body'>
+            We provide service calls and have become completely mobile! Make an appointment with us and we will schedule
+              you to our soonest available date. Our standards and professionalism has taken no toll whatsoever. 
+              Our goal will always be to provide the most convenient and reliable service possible. 
+            </div>
+            <div>
+                <img src='assets/cartoony Hispanic me.png' className='loc-img' ref={imgRef}></img>
             </div> 
-        </div>
-        <div ref={animateRef} className='loc-title'>
-          7548 W McNab Rd, North Lauderdale, FL 33068<br></br>
-          Building A #05-07
-        </div>
+          </div>
+
     </div>
   );
 }

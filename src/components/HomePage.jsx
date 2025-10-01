@@ -39,18 +39,13 @@ function HomePage() {
             <br></br>
             <div className='contact-info'>
             Call Us
-            <a href='tel:+19548761570'>(954) 876 - 1570</a>
+            <a href='tel:+19548731553'>(954) 873 - 1553</a>
+            <a href='tel:+19548731553'>(954) 599 - 1471</a>
             <br></br>
             Email Us
             <a href='mailto:contact@geosautomotive.com'>contact@geosautomotive.com</a>
             <br></br>
-            Text Us
-            <a href='sms:+18335238173'>(833) 523 - 8173</a>
             </div>
-              <br></br>
-              <div className='opening'>Opening Hours:</div>
-              <h3>8:00 AM - 5:00 PM</h3>
-              <h3>MON - FRI</h3>
           </div>
 
          </div>

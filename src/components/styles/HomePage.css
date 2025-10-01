@@ -77,9 +77,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 45em;
+    height: 30em;
     width: 100%;
-    background-color: rgb(42, 118, 172);
     z-index: 1;
     padding: 0;
     margin: 0;
@@ -140,7 +139,6 @@
     margin-top: 35%;
     height: .5em;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px -4px 10px rgba(0, 0, 0, 0.5);
   }
   
   .brand{
@@ -157,6 +155,7 @@
     justify-content: center;
     align-content: center;
     text-shadow: 2px 8px 10px rgba(0, 0, 0, 0.342);
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.5);
     border: none;
     z-index: 0;
   }
@@ -169,7 +168,6 @@
     margin-top: 35%;
     height: .5em;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px -4px 10px rgba(0, 0, 0, 0.5);
   }
   
   .style-banner4{

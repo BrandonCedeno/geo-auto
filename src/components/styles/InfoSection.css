@@ -190,6 +190,10 @@
     animation: translateLeft ease 2s !important;
   }
 
+  .about-content.animate{
+    animation: translateRight ease 2s !important;
+  }
+
 /*-------------------------------------------------------------Mobile-------------------------------------------------------------*/
   @media screen and (max-width: 932px)
   {

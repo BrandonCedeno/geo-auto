@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 
 const InfoSection = () => {
   const animateRef = useAnimation();
+  const aboutRef = useAnimation();
 
   const infoCards = [
     {
@@ -58,7 +59,7 @@ const InfoSection = () => {
         <div className='style-banner'>
         </div>
 
-        <div className='about-content'>
+        <div  ref={aboutRef} className='about-content'>
           <h2>About Us</h2>
           <p> A family owned business setting a standard for excellent service, 
             committed in putting all of your concerns to rest. We sell batteries and remanufacture 

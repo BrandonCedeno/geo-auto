@@ -63,7 +63,7 @@ const NavigationBar = () => {
         <Nav className="flex-column">
           <Nav.Link className="sidebar-link" onClick={handleHomeClick} href="#home">Home</Nav.Link>
           <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#about">About Us</Nav.Link>
-          <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#location">Location</Nav.Link>
+          <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#location">Mobile Service</Nav.Link>
           <Nav.Link className="sidebar-link" onClick={toggleSidebar} href="#contact">Contact</Nav.Link>
         </Nav>
       </motion.div>
