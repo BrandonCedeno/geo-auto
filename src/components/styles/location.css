@@ -103,14 +103,19 @@
     }
 
     .loc-container{
+      display: flex;
+      flex-direction: column;
       height:fit-content;
       margin-bottom:-100px;
-      justify-items: center;
+      align-items: center;
     }
 
     .loc-content{
       justify-items: center;
-      display: contents;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .loc-title{
@@ -121,7 +126,7 @@
 
     .loc-img{
       width: 250px;
-      margin-top: -30px;
+      margin-top: -250px;
     }
     
   }
@@ -132,7 +137,6 @@
     .loc-container{
       height:fit-content;
       margin-bottom:-50px;
-      justify-items: center;
     }
     
     .loc-body{
@@ -140,12 +144,6 @@
       font-size: 20px;
       width: 15em;
       padding: 1.5em;
-  
-    }
-
-    .loc-content{
-      justify-items: center;
-      display: contents;
     }
     
     .loc-title{
@@ -155,6 +153,7 @@
 
     .loc-img{
       width: 300px;
-      margin: -50px;
+      margin-top: -200px;
+      margin-bottom: -50px
     }
   }
